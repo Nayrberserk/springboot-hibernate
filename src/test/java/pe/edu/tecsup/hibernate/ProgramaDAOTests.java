@@ -22,11 +22,12 @@ public class ProgramaDAOTests {
 
         List<Programa> programas = programaDAO.list();
         for (Programa programa : programas) {
+        	System.out.println(programa.getId());
             System.out.println(programa.getNombre());
         }
         Assert.assertTrue(programas.size() > 0);
     }
-
+    /*
     @Test
     public void verifyFind() {
         Programa programa = programaDAO.get(1l);
@@ -68,5 +69,5 @@ public class ProgramaDAOTests {
 
         Assert.assertTrue(programaDAO.get(3l) == null);
     }
-
+*/
 }
